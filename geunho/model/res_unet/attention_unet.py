@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from model.res_unet.moudules import AttentionBlock
+from model.res_unet.modules import AttentionBlock
 
 class AttentionUNet(nn.Module):
     def __init__(self, img_ch=3, output_ch=1):
