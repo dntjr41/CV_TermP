@@ -85,7 +85,7 @@ class AttentionBlock(nn.Module):
 
 class AttentionUNet(nn.Module):
 
-    def __init__(self, img_ch=3, output_ch=1):
+    def __init__(self, img_ch=3, output_ch=2):
         super(AttentionUNet, self).__init__()
 
         self.MaxPool = nn.MaxPool2d(kernel_size=2, stride=2)
